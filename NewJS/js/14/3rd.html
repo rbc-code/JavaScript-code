@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        const student=[
+            {
+                "rollno":110,
+                "name":"Rb",
+                "city":"Jhansi"
+            },
+            {
+                "rollno":111,
+                "name":"Chauhan",
+                "city":"Lalitpur"
+            },
+            {
+                "rollno":112,
+                "name":"Sanju",
+                "city":"Bhopal"
+            },
+            {
+                "rollno":113,
+                "name":"Rohit",
+                "city":"Jhansi"
+            },
+            {
+                "rollno":114,
+                "name":"Raja",
+                "city":"Delhi"
+            }
+        ]
+        let Table="<table border='1'><tr> <td> RollNo </td><td>Name</td> <td>City</td></tr>";
+            student.map((key)=>{
+                Table+="<tr>";
+                    Table+="<td>"+key.rollno+"</td>";
+                    Table+="<td>"+key.name+"</td>";
+                    Table+="<td>"+key.city+"</td>";
+                    Table+="</tr>";
+            })
+            Table+="</table>";
+            document.getElementById("demo").innerHTML=Table;
+    </script>
+</body>
+</html>

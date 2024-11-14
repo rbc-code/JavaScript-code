@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo">Hello</h2>
+    <script>
+        function myDate()
+        {
+            document.getElementById("demo").innerHTML+="Cybrom";
+        }
+        var myint= setInterval(myDate, 1000);
+        function mystope()
+        {
+            clearInterval(myint);
+        }
+
+    </script>
+    <button onclick="mystope()">click</button>
+</body>
+</html>

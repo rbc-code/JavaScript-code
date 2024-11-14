@@ -1,0 +1,40 @@
+{
+"students":[
+    {
+        "rollno":121,
+        "name":"Rb",
+        "city":"bhopal",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"Chauhan",
+        "city":"jhansi",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"Chauhan",
+        "city":"jhansi",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"Chauhan",
+        "city":"jhansi",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"Chauhan",
+        "city":"jhansi",
+        "fees":45000
+    },
+    {
+        "rollno":121,
+        "name":"Chauhan",
+        "city":"jhansi",
+        "fees":45000
+    }
+]
+}

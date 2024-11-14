@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgColor="orange">
+    <h1>Application Form</h1>
+    <form name="f1" method="post" action="/28h.html" onsubmit="return validation();">
+        Enter Name :        <input type="text" name="nm">
+        <br><br>
+        Enter Age :         <input type="text" name="age">
+        <br> <br>
+        Enter Password :    <input type="password" name="pass1">
+        <br><br>
+        Re Enter Password : <input type="password" name="pass2">
+        <br><br>
+        Enter Fees :        <input type="text" name="fs">
+        <br><br>
+        <button>Data Save</button>
+    </form>
+    <script>
+        function validation()
+        {
+           let name=document.f1.nm.value;
+           let age=document.f1.age.value;
+           let age1=parseInt(age);
+           let pass1=document.f1.pass1.value;
+           let pass2=document.f1.pass2.value;
+           let fees=document.f1.fs.value;
+           let fees1=parseInt(fees);
+
+           if(name=="")
+           {
+            alert("Enter Your Name :");
+            document.f1.nm.focus();
+            return false;
+           }
+           if(age=="")
+            {
+                alert("Please Enter age :");
+                document.f1.age.focus();
+                return false;
+            }
+            if(isNaN(age1))
+            {
+                alert("Please enter numric value :");
+                document.f1.age.value="";
+                document.f1.age.focus();
+                return false;
+            }
+            if(pass1=="")
+            {
+                alert("please enter password");
+                document.f1.pass1.focus();
+                return false;
+            }
+            if(pass2=="")
+            {
+                alert("Please re-enter password");
+                document.f1.fees2.focus();
+                return false;
+            }
+            if(pass1!=pass2)
+            {
+                alert("password dose not match :");
+                document.f1.pass1.value="";
+                document.f1.pass2.value="";
+                document.f1.pass1.focus();
+                return false;
+            }
+            if(fees=="")
+            {
+                alert("please enter your fees :");
+                document.f1.fs.focus();
+                return false;
+            }
+            if(isNaN(fees1))
+            {
+                alert("Please enter numric fees :");
+                document.f1.fs.value="";
+                document.f1.fs.focus();
+                return false;
+            }
+            if(fees1<40000)
+            {
+                alert("your fees equal or more than 40000 :");
+                document.f1.fs.value="";
+                document.f1.fs.focus();
+            }
+           
+        }
+    </script>
+</body>
+</html>

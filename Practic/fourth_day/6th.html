@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function display()
+    {
+       var age=document.getElementById("age").value;
+       document.getElementById("head").innerHTML="Hi i am " + age + "year old!!!";
+    }
+</script>
+<body>
+ Enter Age : <input type="text" id="age">  
+ <h1 id="head">display Your Age</h1>  
+ <button onclick="display()">Click</button>
+
+</body>
+</html>

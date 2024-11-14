@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const d = new Date();
+        document.write("<h1>" ,d, "</h1>");
+        const ans = d.getHours();
+        document.write("<h1>" ,ans, "</h1>");
+        const mi = d.getMinutes();
+        document.write("<h1>" ,mi, "</h1>");
+        const se = d.getSeconds();
+        document.write("<h1>" ,se, "</h1>");
+        const mili=d.getMilliseconds();
+        document.write("<h1>" ,mili, "</h1>");
+        const dy = d.getDay();
+        document.write("<h1> Day num",ans, "</h1>");
+        const day = ["Sunday" , "Monday" , "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.write("<h1> Day:" , day[dy], "</h1>");
+        
+        
+    </script>
+
+</body>
+</html>

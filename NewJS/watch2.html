@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body{
+    background-color: rgb(214, 193, 235);
+ }
+ .time{
+    display: flex;
+    width: 450px;
+    height: 170px;
+    border: 5px solid rgb(227, 133, 10);
+    border-radius: 20px;
+    position: relative;
+    left: 32%;
+    font-size: 30px;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+    color: bisque;
+    background-color: purple;
+ } 
+
+</style>
+<body>
+    <div class="time">
+        <h1 id="demo1">00:</h1>
+        <h1 id="demo2">00:</h1>
+        <h1 id="demo3">00</h1>
+    </div>
+    <script>
+        function myDate()
+        {
+            const d=new Date();
+
+            const h=d.getHours();
+            document.getElementById('demo1').innerHTML=h+":";
+            const m=d.getMinutes();
+            document.getElementById('demo2').innerHTML=m+":";
+            const s=d.getSeconds();
+            document.getElementById('demo3').innerHTML=s;
+        }
+        setInterval(myDate, 1000);
+        myDate();
+    </script>
+</body>
+</html>

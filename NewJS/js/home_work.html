@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo
+    {
+        width: 400px;
+        height: 80px;
+        border: blue 3px solid;
+        background-color: aquamarine;
+        padding: 25px;
+        text-align: center;
+        margin-top: 40px;
+    }
+</style>
+<body>
+    <button onclick="display()">Click here</button>
+    <div id="demo">
+       <p>Enter Demo: <input type="text"></p>
+    </div>
+
+    <script>
+        function display()
+        {
+            let myObj=document.createElement("p");
+                myObj.innerHTML="Enter Demo: <input type='text'>";
+                document.getElementById("demo").appendChild(myObj);
+        }
+    </script>
+</body>
+</html>
